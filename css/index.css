@@ -72,7 +72,7 @@ body {
 	background: #eeeeee;
 }
 .contain {
-	width: 1024px;
+	width: 100%;
 	height: 1500px;
 	margin: 0 auto;
 	text-align: center;
@@ -82,9 +82,9 @@ body {
 }
 
 nav {
-	width: 876px;
+	width: 100%;
 	position: relative;
-	margin: 0px 0px 100px 40px;
+	margin: 0px 0px 100px 0px;
 	
 	
 }
@@ -211,7 +211,6 @@ header img {
 footer {
 	position: relative;
 	text-align: center;
-	margin-top: -100px;
 }
 
 @media (max-width: 500px) {
@@ -219,21 +218,23 @@ footer {
     .contain, .product, .vision, .features, .services { 
         padding: 0;
         margin: 0;
+        width: auto;
         float: none;
     }
     
     nav {
-        width: 100%;
+        width: auto;
         margin: 0px 0px 80px 0px;
     }
 
     nav a {
         display: block;
         margin: 0;
-        font-size: 35px;
+        font-size: 1.5em;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         padding: 40px;
+
     }
 
     #logo-a {
@@ -242,15 +243,20 @@ footer {
     }
     
     .logo {
-        transform: scale(1.75);
+        transform: scale(1.5);
+    }
+
+    .middle-img {
+        width: 19em !important;
     }
 
     #maincontent {
         flex-direction: column;
+        width: auto;
     }
 
     .start-box h1 {
-        font-size: 110px;
+        font-size: 50px;
     }
 
     .start-box button {
@@ -262,6 +268,107 @@ footer {
     #fa {
         flex-direction: column;
         align-items: center;
+        width: auto;
+    }
+
+    #cf {
+        width: auto;
+    }
+
+    .features, .services {
+        margin-bottom: 2em;
+    }
+
+    .about {
+        margin-bottom: 0 !important;
+    }
+
+    .sm-item {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 20px;
+    }
+
+    .sm-item h3 {
+        font-size: 1.6em;
+    }
+    .sm-item p, .sm-item address {
+        font-size: 1.2em;
+        width: auto;
+    }
+
+    .m-item {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 20px;
+    }
+
+    .m-item h3 {
+        font-size: 1.6em;
+    }
+    .m-item p {
+        font-size: 1.2em;
+        width: auto;
+    }
+
+    #spv {
+        flex-direction: column;
+        width: auto;
+    }
+
+    hr {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 800px) and (min-width: 501px) {
+
+    .contain, .product, .vision, .features, .services { 
+        padding: 0;
+        margin: 0;
+        width: auto;
+        float: none;
+    }
+    
+    nav {
+        width: auto;
+        margin: 0px 0px 80px 0px;
+    }
+
+    nav  a {
+        margin: 0px 20px 0px 20px;
+    }
+    
+    .logo {
+        transform: scale(0.9);
+    }
+
+    .middle-img {
+        width: 100% !important;
+    }
+
+    #maincontent {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .start-box h1 {
+        font-size: 70px;
+    }
+
+    .start-box button {
+        width: 200px;
+        height: 38px;
+        font-size: 19px;
+    }
+
+    #fa {
+        width: auto;
+    }
+
+    #cf {
+        width: auto;
     }
 
     .sm-item {
@@ -273,49 +380,30 @@ footer {
         font-size: 35px;
     }
     .sm-item p, .sm-item address {
-        font-size: 25px;
+        font-size: 16px;
+        width: auto;
     }
 
     .m-item {
         width: 100%;
         margin-bottom: 60px;
+        padding: 20px;
     }
 
     .m-item h3 {
         font-size: 35px;
     }
     .m-item p {
-        font-size: 25px;
+        font-size: 16px;
+        width: auto;
     }
 
     #spv {
-        flex-direction: column;
+        width: auto;
+    }
+
+    hr {
+        width: auto;
     }
 
 }
-
-@media (max-width: 800px) {
-
-    .contain {
-        margin: 0;
-        padding: 0;
-    }
-
-    #logo-a {
-        display: block;
-        margin: 0px 0px 40px 0px;
-    }
-
-    nav {
-        margin: auto;
-        margin-bottom: 60px;
-    }
-
-    #head-hr {
-        border-bottom: 2px solid black;
-    }
-
-}
-
-
-
